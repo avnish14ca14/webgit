@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     fs.chmod('./gitauto.sh', 0o666, err => {
         if(err) throw err;
         console.log('File permission changed');
-        shell.exec('bash -c ./gitauto.sh');
+        shell.exec('sh ./gitauto.sh');
     });
     res.sendFile(path.join(__dirname, '/views/index.html'));
 });
