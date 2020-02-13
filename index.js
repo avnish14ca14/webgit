@@ -1,9 +1,10 @@
 const express = require('express');
+var path = require('path');
 
-const app = express();
+var app = express();
 
 app.get('/', (req, res) => {
-    res.send('port 8000 is open');
+    res.sendFile(path.join(__dirname, '/views/index.html'));
 });
 
 app.listen(8000, () => {
