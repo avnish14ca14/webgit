@@ -5,6 +5,6 @@ hostname
 cd /devops/webgit/
 git pull
 npm install -y
-BUILD_ID=dontKillMe npm start &
+BUILD_ID=dontKillMe forever start index.js
 exit
 EOF
