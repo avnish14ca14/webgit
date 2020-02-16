@@ -31,6 +31,6 @@ app.get('/viewpage', (req, res) => {
     res.render('viewpage.ejs', { name : req.query.name});
 });
 
-app.listen(8001, () => {
+app.listen(8000, () => {
     console.log('App listening on port 8000!');
 });
