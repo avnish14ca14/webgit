@@ -1,5 +1,5 @@
 ssh cloud_user@avnishkumarkaushik3c.mylabserver.com
-cd /devops/webgit
+cd /devops/webgit/
 git pull origin master
 npm install - production
 npm start
